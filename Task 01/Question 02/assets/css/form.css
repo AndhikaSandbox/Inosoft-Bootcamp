@@ -1,0 +1,87 @@
+.sign-up {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+
+	margin: 32px;
+	border-radius: 8px;
+	background-color: #fff;
+
+	padding: 32px;
+	min-height: 500px;
+}
+
+.sign-up__title {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.sign-up__form {
+	flex: 1;
+	width: 100%;
+	max-width: 100%;
+	display: flex;
+	gap: 24px;
+	overflow: hidden;
+}
+
+@media (max-width: 768px) {
+	.sign-up__form {
+		flex-direction: column;
+	}
+}
+
+.sign-up__form__container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.sign-up__form__field {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.sign-up__form__field__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.sign-up__form__field__container {
+	display: flex;
+	gap: 12px;
+}
+
+.signup-form__field__radio {
+	display: flex;
+	gap: 8px;
+}
+
+.sign-up__form__field__label {
+	font-size: 1.125rem;
+	font-weight: 600;
+}
+
+.sign-up__form__field__input {
+	max-width: 100%;
+
+	padding: 8px 16px;
+	border: 2px solid #dfdfdf;
+	border-radius: 6px;
+}
+
+.sign-up__form__field--fill {
+	flex: 1;
+	align-self: stretch;
+}
+
+textarea.sign-up__form__field__input {
+	flex: 1;
+	align-self: stretch;
+	min-height: 100px;
+
+	resize: none;
+}

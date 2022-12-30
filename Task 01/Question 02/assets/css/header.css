@@ -1,0 +1,23 @@
+.header {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	color: white;
+	background: #0058b2;
+}
+
+.header__title {
+	font-size: clamp(3rem, -0.8889rem + 12.4444vw, 10rem);
+	font-weight: 700;
+	color: #ffd521;
+
+	margin: 0 0 2.5vw;
+}
+
+.header__subtitle {
+	font-size: clamp(1.75rem, 1.0556rem + 2.2222vw, 3rem);
+	font-weight: 500;
+}

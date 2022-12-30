@@ -1,0 +1,16 @@
+.banner {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	padding: 32px;
+}
+
+.banner__image {
+	width: 100%;
+	height: calc(100vh - 64px);
+
+	object-fit: cover;
+	/* aspect-ratio: 16 / 9; */
+	border-radius: 8px;
+}
