@@ -18,6 +18,9 @@ const App = () => {
 		const parsedCurrent = parseFloat(current);
 		const parsedPrevious = parseFloat(previous);
 		switch (operator) {
+			case '%':
+				result = parsedPrevious + parsedCurrent;
+				break;
 			case '+':
 				result = parsedPrevious + parsedCurrent;
 				break;
@@ -31,7 +34,7 @@ const App = () => {
 				result = parsedPrevious / parsedCurrent;
 				break;
 			default:
-				console.log('Dies');
+				console.log('Sadness');
 		}
 
 		setCurrent(result?.toString() || '0');
@@ -82,10 +85,6 @@ const App = () => {
 
 	useEffect(() => {
 		window.addEventListener('keydown', e => handleKeyPress(e));
-
-		console.log(current, 'CURRENT VAL');
-		console.log(operator, 'OPERATOR VAL');
-		console.log(previous, 'PREVIOUS VAL');
 	});
 	return (
 		<div className="wrapper">
@@ -197,10 +196,7 @@ const App = () => {
 					</button>
 					<button
 						className="calculator__buttons__item calculator__buttons__item--method"
-						onClick={() => {
-							console.log('FUCK OFF');
-							calculate();
-						}}
+						onClick={() => calculate()}
 					>
 						=
 					</button>
