@@ -1,7 +1,5 @@
 <template>
-	<div
-		class="relative flex flex-col gap-6 p-3 pt-1 pb-6 after:absolute after:bottom-0 after:left-0 after:min-h-[1px] after:min-w-full after:rounded-sm after:border last-of-type:pb-1 last-of-type:after:hidden sm:flex-row"
-	>
+	<div class="flex flex-1 flex-col gap-5 self-stretch rounded-md border-2 py-5 px-6">
 		<template v-if="useImage === true">
 			<img
 				class="max-h-[auto] max-w-[100%] sm:max-h-[92px] sm:max-w-[92px]"

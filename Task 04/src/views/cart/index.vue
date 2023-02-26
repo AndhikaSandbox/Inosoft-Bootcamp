@@ -6,7 +6,7 @@ import { mapGetters, mapState } from 'vuex';
 </script>
 
 <template>
-	<div class="flex flex-1 flex-col gap-5 rounded-md border-2 py-5 px-6 max-xl:self-stretch">
+	<div class="flex flex-1 flex-col gap-5 self-stretch rounded-md border-2 py-5 px-6">
 		<h1 class="font-sans text-xl font-bold">Summary</h1>
 		<span class="rounded-sm border"></span>
 
